@@ -7,10 +7,7 @@ import { BsCheckCircleFill, BsFillExclamationSquareFill } from "react-icons/bs";
 const Card = ({ id, title, tag, status, priority }) => {
   const isStatus = localStorage.getItem("group") === "status";
   const isPriority = localStorage.getItem("group") === "priority";
-  const statusOrder = ['Backlog', 'Todo', 'In progress', 'Done'];
-  const getStatusIndex = (status) => {
-    return statusOrder.indexOf(status);
-  };
+
   return (
     <div className="cardContainer flex-gap-10" style={{ gap: "5px" }}>
       <div className="cardHeading flex-sb">
